@@ -3,7 +3,30 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>test task</title>
+		<!-- Css -->
+		<link rel="stylesheet" href="./style.css" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
-	<body></body>
+	<body>
+		<div class="checklist">
+			<div class="checklist__steps"></div>
+			<div class="checklist__content">
+				<span class="checklist__content-badge badge">Чеклист</span>
+				<!-- assuming that this heading does not break the heading structure -->
+				<h2 class="checklist__content-title">Выполнено: 0 из 7 действий</h2>
+				<p class="checklist__content-text">
+					Следующее действие: Созвониться с клиентом до 23.05.24 12:00
+				</p>
+			</div>
+			<!-- depending on the behavior, <button> or <a> will be used -->
+			<button class="checklist__button">Открыть чеклист</button>
+		</div>
+	</body>
 </html>
